@@ -1,0 +1,5 @@
+# Package Directories
+node_modules
+
+# Test Results
+allure-results
