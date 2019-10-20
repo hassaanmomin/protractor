@@ -1,6 +1,15 @@
 # Automation | Protractor - Jasmine
 Sample project setup for Protractor hands-on. 
 
+#### Environment
+
+1. **Node Version:** v10.13.0
+2. **Java Version:** 1.8.0_152-release
+3. **Protractor Version:** 5.4.2
+4. **Jasmine Version** 3.5.0
+5. **Allure Version:** 2.13.0
+6. **IDE:** Visual Studio Code
+
 #### What is Protractor?
 • Protractor is a Java Script based automation framework designed to test AngularJS and Angular based websites/portals. Protractor itself is a Node.js project that may as well be referred to as a wrapper for WebdriverJs, something similar to Webdriver IO. </bullet>
 
