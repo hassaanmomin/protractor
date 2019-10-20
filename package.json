@@ -1,0 +1,19 @@
+{
+	"name": "protractor-sample",
+	"version": "1.0.0",
+	"description": "A sample Protractor project for Introductory Session",
+	"main": "index.js",
+	"directories": {
+		"test": "tests"
+	},
+	"dependencies": {
+		"jasmine-allure-reporter": "^1.0.2"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "protractor config.js",
+		"allure": "allure serve /Users/sarahkhalid/Desktop/protractor-sample/allure-results"
+	},
+	"author": "Momin",
+	"license": "ISC"
+}
