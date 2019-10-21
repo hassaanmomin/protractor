@@ -10,20 +10,20 @@ describe('Validate the Calculator Demo Application', () => {
 		expect(browser.getCurrentUrl()).toBe('http://juliemr.github.io/protractor-demo/');
 	});
 
-	it('Addition Test.', () => {
+	it('Addition Test', () => {
 		po.performAddition('10', '5');
 		expect(po.resultText()).toEqual('15');
 		//expect(input.getAttribute('value')).toBe('Foo123');
 		browser.sleep(2000);
 	});
 
-	it('Subtraction Test.', () => {
+	it('Subtraction Test', () => {
 		po.performSubtraction('10', '5');
 		expect(po.resultText()).toEqual('5');
 		browser.sleep(2000);
 	});
 
-	it('Division Test.', () => {
+	it('Division Test', () => {
 		po.performDivision('10', '5');
 		expect(po.resultText()).toEqual('2');
 		browser.sleep(2000);
