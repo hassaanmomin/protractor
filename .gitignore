@@ -3,6 +3,3 @@ node_modules
 
 # Test Results
 allure-results
-
-# Jenkins File
-jenkins.war

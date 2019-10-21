@@ -13,7 +13,7 @@
 	"scripts": {
 		"test": "protractor config.js",
 		"allure": "allure serve /Users/sarahkhalid/protractor-sample/allure-results",
-		"jenkins": "java -jar jenkins.war"
+		"jenkins": "cd /Users/sarahkhalid/Desktop && java -jar jenkins.war"
 	},
 	"author": "Momin",
 	"license": "ISC"
