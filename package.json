@@ -12,7 +12,8 @@
 	"devDependencies": {},
 	"scripts": {
 		"test": "protractor config.js",
-		"allure": "allure serve /Users/sarahkhalid/Desktop/protractor-sample/allure-results"
+		"allure": "allure serve /Users/sarahkhalid/protractor-sample/allure-results",
+		"jenkins": "java -jar jenkins.war"
 	},
 	"author": "Momin",
 	"license": "ISC"

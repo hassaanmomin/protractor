@@ -7,6 +7,8 @@ let homepage = function() {
 
 	this.addition = $('option[value="ADDITION"]');
 
+	this.subtraction = $('option[value="SUBTRACTION"]');
+
 	this.input_second = element(by.model('second'));
 
 	this.go_btn = element(by.id('gobutton'));
@@ -21,6 +23,14 @@ let homepage = function() {
 		this.input_first.sendKeys(first);
 		this.operator.click();
 		this.addition.click();
+		this.input_second.sendKeys(second);
+		this.go_btn.click();
+	};
+
+	this.performSubtraction = function(first, second) {
+		this.input_first.sendKeys(first);
+		this.operator.click();
+		this.subtraction.click();
 		this.input_second.sendKeys(second);
 		this.go_btn.click();
 	};
