@@ -16,7 +16,7 @@ Sample project setup for Protractor hands-on.
 ### Why Protractor?
 • As Protractor is designed specifically to test AngularJs and Angular based projects, It gives support for various angular-specific properties (ng-model, ng-controller) to locate elements that our traditional selenium doesn’t.   
 
-### Setup Protractor on Windows:
+### Setup Protractor on Windows/Mac:
 1. Download and Install Node.js: https://nodejs.org/en/download/
 2. Install Protractor: **npm install -g protractor** (Install Protractor globally with Jasmine as default framework)
 3. Run command: **webdriver-manager update** (Update all browser drivers)
@@ -46,6 +46,15 @@ Sample project setup for Protractor hands-on.
 5. Run command: **allure serve “location of allure-results folder”**
 
 ### Jenkins Integration
+1. Download Jenkins from: https://jenkins.io/download/ (jenkins.war file)
+2. On terminal go to the location of jenkins.war file: **java -jar jenkins.war** (Default Port: 8080)
+3. Once started, Go to browser and enter: **localhost:8080**
+4. Finisg basic setup & Create a new job.
+5. Add commands in Jenkins Job.
+6. Run and Check.
+
+
+
 
 
 
