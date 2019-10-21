@@ -17,9 +17,15 @@ describe('Validate the Calculator Demo Application', () => {
 		browser.sleep(2000);
 	});
 
-	it('Addition Test.', () => {
+	it('Subtraction Test.', () => {
 		po.performSubtraction('10', '5');
 		expect(po.resultText()).toEqual('5');
+		browser.sleep(2000);
+	});
+
+	it('Division Test.', () => {
+		po.performDivision('10', '5');
+		expect(po.resultText()).toEqual('2');
 		browser.sleep(2000);
 	});
 });
