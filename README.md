@@ -49,7 +49,7 @@ Sample project setup for Protractor hands-on.
 1. Download Jenkins from: https://jenkins.io/download/ (jenkins.war file)
 2. On terminal go to the location of jenkins.war file: **java -jar jenkins.war** (Default Port: 8080)
 3. Once started, Go to browser and enter: **localhost:8080**
-4. Finisg basic setup & Create a new job.
+4. Finish basic setup & Create a new job.
 5. Add commands in Jenkins Job.
 6. Run and Check.
 
