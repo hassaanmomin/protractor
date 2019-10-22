@@ -25,7 +25,7 @@ describe('Validate the Calculator Demo Application', () => {
 
 	it('Division Test', () => {
 		po.performDivision('10', '5');
-		expect(po.resultText()).toEqual('2');
+		expect(po.resultText()).toEqual('3');
 		browser.sleep(1000);
 	});
 });
