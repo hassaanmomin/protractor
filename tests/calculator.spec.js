@@ -19,7 +19,7 @@ describe('Validate the Calculator Demo Application', () => {
 
 	it('Subtraction Test', () => {
 		po.performSubtraction('10', '5');
-		expect(po.resultText()).toEqual('5');
+		expect(po.resultText()).toEqual('8');
 		browser.sleep(1000);
 	});
 
