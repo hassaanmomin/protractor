@@ -53,7 +53,10 @@ Sample project setup for Protractor hands-on.
 5. Add commands in Jenkins Job.
 6. Run and Check.
 
-
+### Reference
+1. https://www.protractortest.org/#/tutorial
+2. https://gist.github.com/javierarques/0c4c817d6c77b0877fda
+3. https://www.youtube.com/playlist?list=PLhW3qG5bs-L_dgIr3hiOlnNIO8NGlXQnP
 
 
 
