@@ -1,3 +1,4 @@
+let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 // An example configuration file.
 exports.config = {
 	directConnect: true,
@@ -7,24 +8,28 @@ exports.config = {
 		browserName: 'chrome'
 	},
 
+	// multiCapabilities: [
+	// 	{
+	// 		browserName: 'firefox'
+	// 	},
+	// 	{
+	// 		browserName: 'chrome'
+	// 	}
+	// ],
+
 	// Framework to use. Jasmine is recommended.
 	framework: 'jasmine',
 
 	// Spec patterns are relative to the current working directory when
 	// protractor is called.
-	specs: [ 'tests/calculator.spec.js' ],
+	specs: [ 'tests/*.spec.js' ],
 
 	// Options to be passed to Jasmine.
 	jasmineNodeOpts: {
-		defaultTimeoutInterval: 30000
+		defaultTimeoutInterval: 2500000
 	},
 
-	// Setup the report before any tests start
-	// beforeLaunch: function() {
-	// 	return new Promise(function(resolve) {
-	// 		reporter.beforeLaunch(resolve);
-	// 	});
-	// },
+	logLevel: 'ERROR',
 
 	// Assign the test reporter to each running instance
 	onPrepare: function() {
@@ -34,12 +39,21 @@ exports.config = {
 				resultsDir: '/Users/sarahkhalid/Desktop/protractor-sample/allure-results'
 			})
 		);
+		jasmine.getEnv().addReporter(
+			new SpecReporter({
+				suite: {
+					displayNumber: true // display each suite number (hierarchical)
+				},
+				spec: {
+					displayPending: false, // display each pending spec
+					displayDuration: true // display each spec duration
+				},
+				summary: {
+					displaySuccesses: true, // display summary of all successes after execution
+					displayFailed: true, // display summary of all failures after execution
+					displayPending: false // display summary of all pending specs after execution
+				}
+			})
+		);
 	}
-
-	// Close the report after all tests finish
-	// afterLaunch: function(exitCode) {
-	// 	return new Promise(function(resolve) {
-	// 		reporter.afterLaunch(resolve.bind(this, exitCode));
-	// 	});
-	// }
 };

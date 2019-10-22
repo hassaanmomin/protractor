@@ -19,13 +19,13 @@ describe('Validate the Calculator Demo Application', () => {
 
 	it('Subtraction Test', () => {
 		po.performSubtraction('10', '5');
-		expect(po.resultText()).toEqual('8');
+		expect(po.resultText()).toEqual('5');
 		browser.sleep(1000);
 	});
 
 	it('Division Test', () => {
 		po.performDivision('10', '5');
-		expect(po.resultText()).toEqual('3');
+		expect(po.resultText()).toEqual('2');
 		browser.sleep(1000);
 	});
 });
