@@ -26,7 +26,7 @@ exports.config = {
 
 	// Options to be passed to Jasmine.
 	jasmineNodeOpts: {
-		defaultTimeoutInterval: 2500000
+		defaultTimeoutInterval: 4500000
 	},
 
 	logLevel: 'ERROR',
@@ -36,7 +36,7 @@ exports.config = {
 		var AllureReporter = require('jasmine-allure-reporter');
 		jasmine.getEnv().addReporter(
 			new AllureReporter({
-				resultsDir: '/Users/sarahkhalid/Desktop/protractor-sample/allure-results'
+				resultsDir: '/Users/sarahkhalid/protractor-sample/allure-results'
 			})
 		);
 		jasmine.getEnv().addReporter(
