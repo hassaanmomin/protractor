@@ -9,10 +9,13 @@
 	"dependencies": {
 		"jasmine-allure-reporter": "^1.0.2"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"jasmine-spec-reporter": "^4.2.1"
+	},
 	"scripts": {
 		"test": "protractor config.js",
-		"allure": "allure serve /Users/sarahkhalid/Desktop/protractor-sample/allure-results"
+		"allure": "allure serve /Users/sarahkhalid/protractor-sample/allure-results",
+		"jenkins": "cd /Users/sarahkhalid/Desktop && java -jar jenkins.war"
 	},
 	"author": "Momin",
 	"license": "ISC"
