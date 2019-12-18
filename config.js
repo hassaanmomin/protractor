@@ -36,7 +36,8 @@ exports.config = {
 		var AllureReporter = require('jasmine-allure-reporter');
 		jasmine.getEnv().addReporter(
 			new AllureReporter({
-				resultsDir: '/Users/sarahkhalid/protractor-sample/allure-results'
+				//resultsDir: '/Users/sarahkhalid/protractor-sample/allure-results'
+				resultsDir: '/Users/sarahkhalid/.jenkins/workspace/GitHubTest/allure-results'
 			})
 		);
 		jasmine.getEnv().addReporter(
