@@ -10,7 +10,7 @@ describe('Validate the Calculator Demo Application', () => {
 		expect(browser.getCurrentUrl()).toBe('http://juliemr.github.io/protractor-demo/');
 	});
 
-	it('Addition Test', () => {
+	it('Addition Test 1', () => {
 		po.performAddition('10', '5');
 		expect(po.resultText()).toEqual('15');
 		browser.sleep(1000);
