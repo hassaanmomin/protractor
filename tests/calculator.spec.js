@@ -1,7 +1,7 @@
 var po = require('../pages/calculator.page');
 
 describe('Validate the Calculator Demo Application', () => {
-	beforeAll(function() {
+	beforeAll(function () {
 		browser.get('http://juliemr.github.io/protractor-demo/');
 		browser.waitForAngular();
 	});
@@ -13,7 +13,6 @@ describe('Validate the Calculator Demo Application', () => {
 	it('Addition Test', () => {
 		po.performAddition('10', '5');
 		expect(po.resultText()).toEqual('15');
-		//expect(input.getAttribute('value')).toBe('Foo123');
 		browser.sleep(1000);
 	});
 
