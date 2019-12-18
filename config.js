@@ -33,12 +33,12 @@ exports.config = {
 
 	// Assign the test reporter to each running instance
 	onPrepare: function () {
-		var AllureReporter = require('jasmine-allure-reporter');
-		jasmine.getEnv().addReporter(
-			new AllureReporter({
-				resultsDir: '/Users/sarahkhalid/protractor-sample/allure-results'
-			})
-		);
+		// var AllureReporter = require('jasmine-allure-reporter');
+		// jasmine.getEnv().addReporter(
+		// 	new AllureReporter({
+		// 		resultsDir: '/Users/sarahkhalid/protractor-sample/allure-results'
+		// 	})
+		// );
 		jasmine.getEnv().addReporter(
 			new SpecReporter({
 				suite: {
