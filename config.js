@@ -92,6 +92,8 @@ exports.config = {
 				resultsDir: '/Users/mobileliveqa/protractor-sample/allure-results'
 			})
 		);
+
+		/*
 		jasmine.getEnv().addReporter(
 			new SpecReporter({
 				suite: {
@@ -108,6 +110,21 @@ exports.config = {
 					displayPending: false // display summary of all pending specs after execution
 				}
 			})
-		);
+		); */
+
+		let HtmlReporter = require('protractor-beautiful-reporter');
+             jasmine.getEnv().addReporter(new HtmlReporter({
+                baseDirectory: 'html-reports',
+                screenshotsSubfolder: 'screenshotsOnFailure',
+                takeScreenShotsOnlyForFailedSpecs: true,
+                jsonsSubfolder: 'jsonFiles',
+                excludeSkippedSpecs: true,
+                preserveDirectory: false,
+                clientDefaults:{
+                showTotalDurationIn: "header",
+                totalDurationFormat: "h:m:s",
+                gatherBrowserLogs: true
+              },
+             }).getJasmine2Reporter());
 	}
 };
