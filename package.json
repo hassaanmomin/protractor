@@ -6,16 +6,17 @@
 	"directories": {
 		"test": "tests"
 	},
-	"dependencies": {
-		"jasmine-allure-reporter": "^1.0.2"
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"jasmine-spec-reporter": "^4.2.1"
+		"allure-commandline": "^2.13.0",
+		"jasmine-allure-reporter": "^1.0.2",
+		"jasmine-spec-reporter": "^4.2.1",
+		"protractor": "^7.0.0"
 	},
 	"scripts": {
 		"test": "protractor config.js",
-		"allure": "allure serve /Users/sarahkhalid/protractor-sample/allure-results",
-		"jenkins": "cd /Users/sarahkhalid/Desktop && java -jar jenkins.war"
+		"allure": "allure serve /Users/mobileliveqa/protractor-sample/allure-results",
+		"jenkins": "cd /Users/mobileliveqa/Downloads && java -jar jenkins.war"
 	},
 	"author": "Momin",
 	"license": "ISC"

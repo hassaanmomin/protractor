@@ -22,7 +22,7 @@ exports.config = {
 
 	// Spec patterns are relative to the current working directory when
 	// protractor is called.
-	specs: [ 'tests/*.spec.js' ],
+	specs: [ 'tests/calculator.spec.js' ],
 
 	// Options to be passed to Jasmine.
 	jasmineNodeOpts: {
@@ -36,7 +36,7 @@ exports.config = {
 		var AllureReporter = require('jasmine-allure-reporter');
 		jasmine.getEnv().addReporter(
 			new AllureReporter({
-				resultsDir: '/Users/sarahkhalid/protractor-sample/allure-results'
+				resultsDir: '/Users/mobileliveqa/protractor-sample/allure-results'
 			})
 		);
 		jasmine.getEnv().addReporter(
