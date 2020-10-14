@@ -10,8 +10,7 @@
 	"devDependencies": {
 		"allure-commandline": "^2.13.0",
 		"jasmine-allure-reporter": "^1.0.2",
-		"jasmine-spec-reporter": "^4.2.1",
-		"protractor": "^7.0.0"
+		"jasmine-spec-reporter": "^4.2.1"
 	},
 	"scripts": {
 		"test": "protractor config.js",

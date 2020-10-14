@@ -1,21 +1,74 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 // An example configuration file.
 exports.config = {
-	directConnect: true,
+	// directConnect: true,
 
-	// Capabilities to be passed to the webdriver instance.
+	/**
+	 * If the sauceUser and sauceKey are specified, seleniumServerJar will be
+	 * ignored. The tests will be run remotely using Sauce Labs.
+	 */
+	sauceUser: 'zeek49',
+	/**
+	 * If the sauceUser and sauceKey are specified, seleniumServerJar will be
+	 * ignored. The tests will be run remotely using Sauce Labs.
+	 */
+	sauceKey: 'b4e289c9-2722-43ba-8ec0-126083be6904',
+
+	/**
+	 * If you run your tests on SauceLabs you can specify the region you want to run your tests
+	 * in via the `sauceRegion` property. Available short handles for regions are:
+	 * us: us-west-1 (default)
+	 * eu: eu-central-1
+	 */
+	sauceRegion: 'us',
+
+	/* Capabilities to be passed to the webdriver instance.
 	capabilities: {
 		browserName: 'chrome'
-	},
+	}, */
 
-	// multiCapabilities: [
-	// 	{
-	// 		browserName: 'firefox'
-	// 	},
-	// 	{
-	// 		browserName: 'chrome'
-	// 	}
-	// ],
+	
+	
+	multiCapabilities: [
+		{
+			browserName: 'chrome',
+			version: 'latest',
+			platform: 'Windows 10',
+			name: 'demo-protractor',
+			/**
+			 * If this is set to be true, specs will be sharded by file (i.e. all
+			 * files to be run by this set of capabilities will run in parallel).
+			 * Default is false.
+			 */
+			shardTestFiles: true,
+
+			/**
+			 * Maximum number of browser instances that can run in parallel for this
+			 * set of capabilities. This is only needed if shardTestFiles is true.
+			 * Default is 1.
+			 */
+			maxInstances: 25,
+		},
+		{
+			browserName: 'firefox',
+			version: 'latest',
+			platform: 'Windows 10',
+			name: 'demo-protractor',
+			/**
+			 * If this is set to be true, specs will be sharded by file (i.e. all
+			 * files to be run by this set of capabilities will run in parallel).
+			 * Default is false.
+			 */
+			shardTestFiles: true,
+
+			/**
+			 * Maximum number of browser instances that can run in parallel for this
+			 * set of capabilities. This is only needed if shardTestFiles is true.
+			 * Default is 1.
+			 */
+			maxInstances: 25,
+		}
+	],
 
 	// Framework to use. Jasmine is recommended.
 	framework: 'jasmine',
@@ -46,7 +99,8 @@ exports.config = {
 				},
 				spec: {
 					displayPending: false, // display each pending spec
-					displayDuration: true // display each spec duration
+					displayDuration: true,
+					displayStacktrace: true // display each spec duration
 				},
 				summary: {
 					displaySuccesses: true, // display summary of all successes after execution

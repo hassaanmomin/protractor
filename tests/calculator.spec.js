@@ -14,18 +14,15 @@ describe('Validate the Calculator Demo Application', () => {
 		po.performAddition('10', '5');
 		expect(po.resultText()).toEqual('15');
 		//expect(input.getAttribute('value')).toBe('Foo123');
-		browser.sleep(1000);
 	});
 
 	it('Subtraction Test', () => {
 		po.performSubtraction('10', '5');
 		expect(po.resultText()).toEqual('5');
-		browser.sleep(1000);
 	});
 
 	it('Division Test', () => {
 		po.performDivision('10', '5');
 		expect(po.resultText()).toEqual('2');
-		browser.sleep(1000);
 	});
 });
